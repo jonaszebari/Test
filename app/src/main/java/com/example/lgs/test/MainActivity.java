@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
         SeekBar.OnSeekBarChangeListener seekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                textView.setTextSize(textSizeSlider.getProgress() + 20);
+                textView.setTextSize(textSizeSlider.getProgress());
+                textView.setTextColor(155);
             }
 
             @Override

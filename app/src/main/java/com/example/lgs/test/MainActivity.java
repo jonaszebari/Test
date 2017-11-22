@@ -22,12 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnEnter = findViewById(R.id.btnEnter);
         Button btnClear = findViewById(R.id.btnClear);
-//        btnDone = findViewById(R.id.button);
         userInput = findViewById(R.id.editText);
         textView = findViewById(R.id.textView);
-//        tvNewPage = findViewById(R.id.tvNewPage);
         textSizeSlider = findViewById(R.id.seekBar);
-//        newPageSwitch = findViewById(R.id.switch1);
 
         textView.setMovementMethod(new ScrollingMovementMethod());
 
@@ -74,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnEnter.setOnClickListener(enterButtonListener);
         btnClear.setOnClickListener(clearButtonListener);
-//        btnDone.setOnClickListener(doneButtonListener);
         textSizeSlider.setOnSeekBarChangeListener(seekBarChangeListener);
     }
 }

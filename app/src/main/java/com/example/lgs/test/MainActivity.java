@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String result = userInput.getText().toString();
                 if (!result.equals("")) {
-                    result += "\n";
+                    result += "\n\n";
                     textView.append(result);
                     userInput.setText("");
                 }
